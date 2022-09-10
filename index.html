@@ -9,26 +9,123 @@
 <body>
 	<div class="dashboard-container">
 		<div class="dashboard-opts">
-			<div class="user-info">
-				<div id="home"><span>Home</span></div>
-				<div id="profile"><span>Profile</span></div>
-				<div id="history"><span>History</span></div>
-				<div id="communities"><span>Communities</span></div>
+			<div class="user-dashboard-container">
+				<div class="user-info">
+					<div id="home" class="div-opt"><a href="#">Home</a></div>
+					<div id="profile" class="div-opt"><a href="#">Profile</a></div>
+					<div id="history" class="div-opt"><a href="#">History</a></div>
+					<div id="communities" class="div-opt"><a href="#">Communities</a></div>
+				</div>
+				<div class="dashboard-info">
+					<div id="Settings" class="div-opt"><a href="#">Settings</a></div>
+					<div id="Support" class="div-opt"><a href="#">Support</a></div>
+				</div>
 			</div>
-			<div class="dashboard-info">
-				<div><span>Settings</span></div>
-				<div><span>Support</span></div>
-			</div>
+
 			<div class="developer-info">
-				<div><span>Github</span></div>
-				<div><span>The Odin Project</span></div>
+				<div id="github" class="div-opt"><a href="https://github.com/AV-MMI" target="_blank">Github</a></div>
+				<div id="top" class="div-opt"><a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard" target="_blank">The Odin Project</a></div>
 			</div>
 		</div>
-		<div class="search-and-profile"></div>
+		<div class="search-and-profile">
+			<div class="search-container">
+				<div class="search">
+					<img src="./img/magnify.svg" alt="magnify" class="magnify">
+					<input type="search" id="search-input" placeholder="Are you looking for some specific card?">
+				</div>
+				<div class="welcome">
+					<span>Welcome back! Jane Doe</span>
+				</div>
+			</div>
+			<div class="profile-crud-container">
+				<div class="profile">
+					<img src="./img/alarm-light-outline.svg" alt="alarm-icon" class="alarm">
+					<img src="./img/avatar-svgrepo-com.svg" alt="avatar" class="avatar">
+					<span class="username">Jane Doe</span>
+				</div>
+
+				<div class="crud">
+					<button type="button" id="create-btn" class="btn btn-crud">new card</button>
+					<button type="button" id="update-btn" class="btn btn-crud">update</button>
+					<button type="button" id="remove-btn" class="btn btn-crud">remove</button>
+				</div>
+			</div>
+		</div>
 		<div class="dashboard-content">
-			<div class="pending-to-read"></div>
-			<div class="topics"></div>
-			<div class="trending"></div>
+			<div class="pending-to-read">
+				<div class="card-container">
+					<div class="indicator"></div>
+					<div class="content-container">
+						<h3>Lorem 1</h3>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, doloremque illum facere animi, nobis accusamus fugiat voluptate? Quibusdam itaque tenetur iure molestias dolor et, eligendi eveniet laborum lorem</p>
+					</div>
+				</div>
+				<div class="card-container">
+					<div class="indicator"></div>
+					<div class="content-container">
+						<h3>Lorem 2</h3>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil nulla, nemo consequatur asperiores consectetur placeat, repellat sequi ab exercitationem eaque est. Ea, explicabo accusantium quos perspiciatis iusto </p>
+					</div>
+				</div>
+				<div class="card-container">
+					<div class="indicator"></div>
+					<div class="content-container">
+						<h3>Lorem 3</h3>
+						<p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Rerum odio esse magnam doloremque ipsa, aspernatur officiis fugiat iusto et autem nesciunt voluptatum dolorum assumenda fuga alias doloribus </p>
+					</div>
+				</div>
+				<div class="card-container">
+					<div class="indicator"></div>
+					<div class="content-container">
+						<h3>Lorem 4</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Esse ratione repellat architecto, tempore, vitae nam optio in modi culpa? Aperiam distinctio fugiat culpa minima, enim ut odio tempora </p>
+					</div>
+				</div>
+				<div class="card-container">
+					<div class="indicator"></div>
+					<div class="content-container">
+						<h3>Lorem 5</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi minus odit blanditiis fuga veniam assumenda, magni nostrum eaque adipisci dicta, tenetur ad, reiciendis impedit, ipsa minima velit nisi </p>
+					</div>
+				</div>
+				<div class="card-container">
+					<div class="indicator"></div>
+					<div class="content-container">
+						<h3>Lorem 6</h3>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, fuga, voluptatibus. Aliquam cumque nostrum tempora harum odio in recusandae totam adipisci, deleniti eum voluptates assumenda error consequuntur </p>
+					</div>
+				</div>
+			</div>
+			<div class="right-content-container">
+				<div class="topics">
+					<h2>Topics</h2>
+					<div class="topics-item-wrapper">
+						<div class="topics-item"><a href="#">Sports</a></div>
+						<div class="topics-item"><a href="#">Science</a></div>
+						<div class="topics-item"><a href="#">Love</a></div>
+						<div class="topics-item"><a href="#">Music</a></div>
+					</div>
+				</div>
+				<div class="trending-users-container">
+					<h2>Trending</h2>
+					<div class="trending-users">
+						<div class="trending-item">
+							<img src="./img/avatar1-svgrepo-com.svg" alt="avatar">
+							<div class="wrapper">
+							<span><strong>@tegan</strong></span>
+							<span>World peace builder</span>
+							</div>
+						</div>
+						<div class="trending-item">
+							<img src="./img/avatar-svgrepo-com.svg" alt="avatar">
+							<div class="wrapper">
+							<span><strong>@jane-Doe</strong></span>
+							<span>Just another project</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
